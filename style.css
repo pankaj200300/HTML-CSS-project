@@ -155,7 +155,7 @@
 .footer .first{
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    height: auto;
     
 }
 .first img{
@@ -203,18 +203,47 @@
     padding: 5px;
    
 }
+.third a:hover{
+    background-color: white;
+    color: brown;
+}
 .forth{
     display: flex;
     flex-direction: column;
     color: white;
     padding: 10px;
 }
+
 @media(max-width:1087px)
 {
     .footer{
     display: grid;
     grid-auto-rows: auto;
-    grid-template-columns: 1fr; /* ek hi column full width */
+    grid-template-columns: 1fr; 
     }
-     
+    .forth{
+        margin-top: 0;
+        align-items: center;
+    }
+    .second{
+        margin-top: 0;
+        align-items: center;
+    }
+    .third{
+        margin-top: 0;
+        align-items: center;
+    }
+    .first{
+        margin-top: 0;
+        padding: 0;
+        height: auto;
+        text-align: center;
+        border: 1px solid white;
+    }
+    .first p{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
 }
