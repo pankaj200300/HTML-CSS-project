@@ -209,3 +209,12 @@
     color: white;
     padding: 10px;
 }
+@media(max-width:1087px)
+{
+    .footer{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto;
+        height: auto;
+    }       
+}
