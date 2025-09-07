@@ -85,7 +85,11 @@
 }
 @media(max-width:1087px)
 {
-    .mid .contactinfo{
+    .mid .contactinfo
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: auto;
     }
     .mid .forminfo{
