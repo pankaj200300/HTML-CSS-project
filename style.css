@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Navbar Decoration  */
+.navbar{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.navbar a{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: gold;
+}
+.navbar .logo h3{
+    margin: 10px;
+    padding: 10px;
+    border: 2px dashed gold;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 5px 5px 10px white;
+}
+.navbar .search input{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+ 
+/* contact section design  */
+.contact{
+    background-image: url("bg1.jpg");
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.contact p{
+    padding: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contact h2{
+    color:gold;
+}
+
+/* design for min section  */
+.mid{
+    height: 500px;
+    display: flex;
+    background-color: rgb(179, 244, 244);
+}
+@media(max-width:1087px)
+{
+    .mid{
+        flex-direction: column;
+        height: auto;
+    }
+}
+/* for contact information */
+.mid .contactinfo{
+    
+    width: 50%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;    
+    grid-template-rows: auto auto;
+}
+@media(max-width:1087px)
+{
+    .mid .contactinfo{
+        width: auto;
+    }
+    .mid .forminfo{
+        width: auto;
+        align-self: center;
+        margin-top: 10px;
+    }
+}
+.mid .contactinfo div
+{
+    width: 240px;
+    height: 200px;
+    background-color: antiquewhite;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* for form information  */
+.mid .forminfo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid gold;
+    
+}
+.mid .forminfo h2{
+    align-self:center;
+}
+.mid .forminfo p{
+    padding: 10px;
+}
+.mid .forminfo form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.mid .forminfo form input{
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.mid .forminfo form button{
+    width: 94%;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: wheat;
+    cursor: pointer;
+}
+
+/* design for footer  */
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    /* flex-wrap: wrap; */
+    /* background-color: rgb(107, 27, 27); */
+    background-color: black;
+}
+
+.footer .first{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    
+}
+.first img{
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}
+.first p{
+    margin-left: 90px;
+    color: white;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+}
+.second a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    /* align-self: center; */
+}
+.second a:hover{
+    background-color: white;
+    color: brown;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+}
+.third a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+   
+}
+.forth{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+}
